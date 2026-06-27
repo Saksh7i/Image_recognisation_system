@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+
+    <style>
+        body{
+            background-color: rgb(97, 131, 146);
+            font-family: Arial;
+            text-align:center;
+            margin-top:30px;
+        }
+
+        img{
+            width:300px;
+            border-radius:10px;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1>Prediction Result</h1>
+
+<img src="/{{ image_path }}">
+
+<h2 style="color: rgb(24, 0, 31), font-family: saddlebrown;">Prediction: {{ prediction }}</h2>
+
+<h3>Confidence: {{ confidence }}%</h3>
+
+<br>
+
+<a href="/">Try Another Image</a>
+
+</body>
+</html>

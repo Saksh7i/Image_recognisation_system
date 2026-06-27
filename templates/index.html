@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Recognition System</title>
+
+    <style>
+    body {
+        background-color: rgb(158, 179, 188);
+        color: rgb(165, 165, 120);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 100px;
+    }
+
+    h1, h2 {
+        color: rgb(235, 228, 237);
+        border-bottom: 4px solid rgb(3, 33, 51);
+        display: inline-block;
+    }
+
+    img {
+        width: 300px;
+        border-radius: 10px;
+        border: 3px solid rgb(8, 18, 43);
+    }
+
+    a {
+        color: rgb(8, 31, 43);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: rgb(3, 26, 39);
+        text-decoration: underline;
+    }
+    .container {
+        max-width: 500px;
+        height: 250px;
+        margin: 10px auto;
+        padding: 20px;
+        background-color: rgb(29, 73, 83);
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(238, 61, 61, 0.1);
+    }
+
+    button {
+        background-color: rgb(8, 31, 43);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Image Recognition System</h1>
+
+<form action="/predict" method="POST" enctype="multipart/form-data">
+
+    <input type="file" name="image" required>
+    <br><br>
+
+    <button type="submit">
+        Predict
+    </button>
+
+</form>
+
+</div>
+
+</body>
+</html>
